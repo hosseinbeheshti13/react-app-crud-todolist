@@ -1,0 +1,59 @@
+.search-input {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+}
+
+.search-input button {
+  border: 1px solid #8e8e8e;
+  padding: 4px 17px;
+  background-color: #08b729;
+  color: white;
+  border-radius: 0 6px 6px 0;
+}
+
+.search-input input {
+  flex: auto;
+  border-radius: 6px 0px 0px 6px;
+  border: 1px solid #8e8e8e;
+}
+
+.todo-list li {
+  background: #dcdcdc;
+}
+
+.todo-list li:nth-child(odd) {
+  background: white;
+}
+
+.todo-list .todo-item {
+  display: flex;
+}
+
+.todo-list li p {
+  flex: 70;
+  margin-top: 1rem !important;
+}
+
+.todo-list li .actionsContainer {
+  flex: auto;
+}
+
+.todo-list li .actionsContainer button {
+  padding: 3px 14px;
+  margin: 5px 10px;
+}
+
+.todo-list li .actionsContainer .edit-btn {
+  background-color: #1088f8;
+  border: 1px solid #080e97;
+  border-radius: 7px;
+  box-shadow: 0px 3px 18px 5px #939393;
+}
+
+.todo-list li .actionsContainer .delete-btn {
+    background-color: #ff0000;
+    border: 1px solid #990707;
+    border-radius: 7px;
+    box-shadow: 0px 3px 18px 5px #939393;
+}

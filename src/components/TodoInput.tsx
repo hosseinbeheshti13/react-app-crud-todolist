@@ -7,7 +7,8 @@ interface Props {
 export default function TodoList(props: Props) {
   const { handleAddTodos, todoValue, setTodoValue } = props;
   return (
-    <header>
+    <header className="container">
+      <div className="search-input">
       <input
         value={todoValue}
         type="text"
@@ -24,6 +25,7 @@ export default function TodoList(props: Props) {
       >
         add
       </button>
+      </div>
     </header>
   );
 }

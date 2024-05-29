@@ -48,6 +48,7 @@ function App() {
 
   return (
     <>
+    <h2 className="app-title">To Do App</h2>
       <TodoInput
         todoValue={todoValue}
         setTodoValue={setTodoValue}

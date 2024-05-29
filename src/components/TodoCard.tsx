@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 interface Props {
-  children ?: React.ReactNode;
+  children?: React.ReactNode;
   handleDeleteTodos: (index: number) => void;
   index: number;
   handleEditTodo: (index: number) => void;
@@ -13,6 +13,7 @@ export default function TodoCard(props: Props) {
       {children}
       <div className="actionsContainer">
         <button
+          className="edit-btn"
           onClick={() => {
             handleEditTodo(index);
           }}
@@ -20,6 +21,7 @@ export default function TodoCard(props: Props) {
           <i className="fa-solid fa-pen-to-square"></i>
         </button>
         <button
+          className="delete-btn"
           onClick={() => {
             handleDeleteTodos(index);
           }}
